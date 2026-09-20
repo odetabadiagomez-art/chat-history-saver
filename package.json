@@ -5,6 +5,15 @@
   "version": "0.1.0",
   "publisher": "shvfs",
   "license": "MIT",
+  "author": {
+    "name": "Odet Abadia",
+    "email": "odet@shvfs.cn"
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#0b57d0",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -26,6 +35,10 @@
     "type": "git",
     "url": "https://github.com/shvfs/chat-history-saver"
   },
+  "bugs": {
+    "url": "https://github.com/shvfs/chat-history-saver/issues"
+  },
+  "homepage": "https://github.com/shvfs/chat-history-saver#readme",
   "activationEvents": [
     "onStartupFinished"
   ],

@@ -2,6 +2,7 @@
 node_modules/**
 src/**
 out/**
+chat-history/**
 probe*.cjs
 tsconfig.json
 esbuild.mjs
