@@ -1,0 +1,94 @@
+{
+  "name": "chat-history-saver",
+  "displayName": "Chat History Saver",
+  "description": "Automatically saves VS Code AI chat conversations as Markdown into a chat-history folder in your workspace, with a record of files touched, tools, skills and agents used.",
+  "version": "0.1.0",
+  "publisher": "shvfs",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "AI",
+    "Chat",
+    "Other"
+  ],
+  "keywords": [
+    "chat",
+    "history",
+    "backup",
+    "export",
+    "markdown",
+    "copilot",
+    "ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shvfs/chat-history-saver"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "chatHistorySaver.saveNow",
+        "title": "Save Chat History Now",
+        "category": "Chat History Saver",
+        "icon": "$(save)"
+      },
+      {
+        "command": "chatHistorySaver.openFolder",
+        "title": "Open Chat History Folder",
+        "category": "Chat History Saver",
+        "icon": "$(folder-opened)"
+      }
+    ],
+    "configuration": {
+      "title": "Chat History Saver",
+      "properties": {
+        "chatHistorySaver.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable automatic saving of chat conversations to the workspace."
+        },
+        "chatHistorySaver.outputFolder": {
+          "type": "string",
+          "default": "chat-history",
+          "description": "Folder (relative to the workspace root) where Markdown history files are saved."
+        },
+        "chatHistorySaver.includeToolSummaries": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include a one-line summary of each tool call per turn (commands run, files read, etc.)."
+        },
+        "chatHistorySaver.includeThinking": {
+          "type": "boolean",
+          "default": false,
+          "description": "Include the assistant's thinking/reasoning blocks in the export."
+        },
+        "chatHistorySaver.exportOnStartup": {
+          "type": "boolean",
+          "default": true,
+          "description": "Export all existing chat sessions when VS Code starts."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "build:prod": "node esbuild.mjs --production",
+    "watch": "node esbuild.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "vscode:prepublish": "node esbuild.mjs --production",
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/vscode": "^1.90.0",
+    "@vscode/vsce": "^3.2.1",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.5.0"
+  }
+}
