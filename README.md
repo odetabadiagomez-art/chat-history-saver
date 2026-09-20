@@ -4,6 +4,8 @@ Automatically saves your VS Code AI chat conversations (GitHub Copilot and custo
 
 Built for classrooms and teams: every conversation becomes a permanent, shareable record of what you asked, what the AI answered, and **which files were created or modified along the way**.
 
+> Source & releases: [github.com/odetabadiagomez-art/chat-history-saver](https://github.com/odetabadiagomez-art/chat-history-saver)
+
 ## Why?
 
 VS Code stores chat sessions in an internal `.jsonl` patch format inside `workspaceStorage`, which is easy to lose and impossible to read. This extension reconstructs each session and exports it as human-readable Markdown, automatically and continuously.

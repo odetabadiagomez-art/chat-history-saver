@@ -33,12 +33,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shvfs/chat-history-saver"
+    "url": "https://github.com/odetabadiagomez-art/chat-history-saver"
   },
   "bugs": {
-    "url": "https://github.com/shvfs/chat-history-saver/issues"
+    "url": "https://github.com/odetabadiagomez-art/chat-history-saver/issues"
   },
-  "homepage": "https://github.com/shvfs/chat-history-saver#readme",
+  "homepage": "https://github.com/odetabadiagomez-art/chat-history-saver#readme",
   "activationEvents": [
     "onStartupFinished"
   ],
