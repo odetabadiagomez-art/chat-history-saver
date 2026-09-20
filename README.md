@@ -42,6 +42,16 @@ Each file contains YAML frontmatter (title, session id, dates, agents, models, s
 2. In VS Code: **Extensions view → `…` menu → Install from VSIX…** (or double-click the file).
 3. Reload VS Code. Done — from now on every chat in every workspace is saved automatically to `chat-history/` in that workspace.
 
+## Install with Copilot (one paste)
+
+Open Copilot Chat in **Agent mode** and paste this prompt — the agent downloads and installs the extension for you:
+
+> Install the "Chat History Saver" VS Code extension: download
+> `https://github.com/odetabadiagomez-art/chat-history-saver/raw/main/releases/chat-history-saver-0.1.0.vsix`
+> and install it with `code --install-extension <downloaded file>` (if `code` is not on PATH, use the full path to the VS Code CLI binary), then reload VS Code.
+
+Approve the terminal commands when the agent asks. When a new version is published, the filename in the link changes to the new version number.
+
 ## Settings
 
 | Setting | Default | Description |
