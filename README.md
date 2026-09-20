@@ -1,5 +1,7 @@
 # <img src="icon.png" width="64" height="64" alt="Chat History Saver logo" align="left">&nbsp; Chat History Saver
 
+**English** | [简体中文](README.zh-CN.md)
+
 Automatically saves your VS Code AI chat conversations (GitHub Copilot and custom chat providers) as clean Markdown files into a `chat-history/` folder at the root of each workspace.
 
 Built for classrooms and teams: every conversation becomes a permanent, shareable record of what you asked, what the AI answered, and **which files were created or modified along the way**.
